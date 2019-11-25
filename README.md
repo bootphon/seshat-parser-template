@@ -1,21 +1,13 @@
 # seshat-parser-template
 
-This is a template for any external class that would be needed at any step of the
-pyannote pipeline. The classes that are defined in your extension can be then 
-used through the `config.yml` file.
-
-The name of submodule you use in the `pyannote/` folder should reflect what your
-extension is about (`models`, `features`, `callbacks`, ...).
- 
+This is a template for external annotation parsers (used for TextGrid file checking) that can be included in an instance of a [Seshat server](https://github.com/bootphon/seshat-restful-server)
 
 ## Installation
 
-Pyannote extensions usually require the
- [pyannote-audio](https://github.com/pyannote/pyannote-audio) environment to be installed
- and activated. Be sure to follow the installation instructions on the aforementioned's repo.
- 
+< TODO >
+
 Once this is done (and the environment activated), you can install it through pip:
 
 ``` 
-pip install git+git://github.com/pyannote/pyannote-myextension.git
+pip install git+git://github.com/mylogin/my-parser-plugin.git
 ``` 
