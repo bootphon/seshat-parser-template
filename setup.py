@@ -13,14 +13,15 @@ with open('README.md') as f:
     long_description = f.read()
 
 setup(
-    name='seshat-parser-sampa',
+    name='seshat-parser-mymodule',  # change this to whatever you want
     packages=find_packages(),
     install_requires=["seshat-server",
-                      "voxpopuli"],
+                      # other dependencies...
+                      ],
 
     version="0.1",
 
-    description='Parsers to check if some phonemic form is a valid SAMPA string',
+    description='Your description',
     long_description=long_description,
     long_description_content_type='text/markdown',
 
