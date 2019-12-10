@@ -5,7 +5,8 @@ from seshat.parsers.base import BaseCustomParser, AnnotationError
 class MyCustomParser(BaseCustomParser):
     """An example custom parser class"""
     NAME = "My Parser"  # this name should be unique, and will be displayed in Seshat's interface
-    LANGUAGE = None
+    VALID_ANNOT_EXAMPLE = ""
+    INVALID_ANNOT_EXAMPLE = ""
 
     def check_annotation(self, annot: str) -> None:
         """You should check the annotation in this function. If anything's
@@ -13,3 +14,4 @@ class MyCustomParser(BaseCustomParser):
         as invalid.
         This function shouldn't return anything."""
         pass
+
