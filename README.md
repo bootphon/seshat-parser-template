@@ -102,9 +102,15 @@ make sure that all annotations that go through this method are all valid.**
 Your last step is to make sure that all your valid parser classes are imported
 in your module's `__init__.py` (as Seshat will look for your parsers in there).
 
-## Configuring the `setup.py`
+## Configuring the package and `setup.py`
 
-TODO
+You can customize the template `setup.py` in any way you want, the only 
+constraint being that your module's name (listed in the `packages` field) 
+starts with `seshat_parser_`. Thus this means that your package's `name` field 
+can be anything you want, but the module's **folder has to have a name 
+starting with `seshat_parser_`**. 
+
+We however advise that the package's name matches its module folder's name.
 
 ## Installation and Testing
 
